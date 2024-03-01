@@ -15,15 +15,15 @@ int main() {
 
   cout << "hollow rectangle" << endl;
   int nh = 5;
-  for (int row = 0; row < 3; row++) {
-    if (row == 0 || row == 2) {
-      for (int col = 0; col <= 5; col++) {
+  for (int row = 0; row < nh; row++) {
+    if (row == 0 || row == nh - 1) {
+      for (int col = 0; col < nh; col++) {
         cout << "* ";
       }
       cout << endl;
     } else {
-      for (int col = 0; col <= 5; col++) {
-        if (col == 0 || col == 5) {
+      for (int col = 0; col < nh; col++) {
+        if (col == 0 || col == nh - 1) {
           cout << "* ";
         } else {
           cout << "  ";
@@ -32,4 +32,61 @@ int main() {
       cout << endl;
     }
   }
+  // half pyramid
+  cout << "half pyramid" << endl;
+
+  for (int row = 0; row < 6; row++) {
+    for (int col = 0; col < row + 1; col++) {
+      cout << "* ";
+    }
+
+    cout << endl;
+  }
+
+//  inverted half pyramid
+cout << " inverted half pyramid" << endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
