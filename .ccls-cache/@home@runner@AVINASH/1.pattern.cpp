@@ -43,50 +43,12 @@ int main() {
     cout << endl;
   }
 
-//  inverted half pyramid
-cout << " inverted half pyramid" << endl;
+  //  inverted half pyramid
+  cout << " inverted half pyramid" << endl;
+  for (int row = 0; row < 6; row++) {
+    for (int col = 0; col < 6 - row; col++) {
+      cout << "* ";
+    }
+    cout << endl;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
